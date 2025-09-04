@@ -1,0 +1,154 @@
+[
+  {
+    "ContainingType": "BloodTrack.Api.Controllers.BloodStocksController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/bloodstocks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BloodTrack.Api.Controllers.DonationsController",
+    "Method": "Post",
+    "RelativePath": "api/v1/donations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "BloodTrack.Application.Models.RegisterDonationInputModel",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BloodTrack.Api.Controllers.DonationsController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/donations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BloodTrack.Api.Controllers.DonationsController",
+    "Method": "GetById",
+    "RelativePath": "api/v1/donations/donations/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BloodTrack.Api.Controllers.DonorsController",
+    "Method": "Post",
+    "RelativePath": "api/v1/donors",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "BloodTrack.Application.Models.RegisterDonorInputModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BloodTrack.Api.Controllers.DonorsController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/donors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BloodTrack.Api.Controllers.DonorsController",
+    "Method": "GetDonorById",
+    "RelativePath": "api/v1/donors/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BloodTrack.Api.Controllers.DonorsController",
+    "Method": "GetDonationsByDonorId",
+    "RelativePath": "api/v1/donors/{id}/donations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BloodTrack.Api.Controllers.DonorsController",
+    "Method": "Put",
+    "RelativePath": "api/v1/donors/donors/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "BloodTrack.Application.Models.UpdateDonorInputModel",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BloodTrack.Api.Controllers.DonorsController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/donors/donors/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

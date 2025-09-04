@@ -1,0 +1,16 @@
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Application\bin\Debug\net8.0\BloodTrack.Application.deps.json
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Application\bin\Debug\net8.0\BloodTrack.Application.dll
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Application\bin\Debug\net8.0\BloodTrack.Application.pdb
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Application\obj\Debug\net8.0\BloodTrack.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Application\obj\Debug\net8.0\BloodTrack.Application.AssemblyInfoInputs.cache
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Application\obj\Debug\net8.0\BloodTrack.Application.AssemblyInfo.cs
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Application\obj\Debug\net8.0\BloodTrack.Application.csproj.CoreCompileInputs.cache
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Application\obj\Debug\net8.0\BloodTrack.Application.sourcelink.json
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Application\obj\Debug\net8.0\BloodTrack.Application.dll
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Application\obj\Debug\net8.0\refint\BloodTrack.Application.dll
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Application\obj\Debug\net8.0\BloodTrack.Application.pdb
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Application\obj\Debug\net8.0\ref\BloodTrack.Application.dll
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Application\bin\Debug\net8.0\BloodTrack.Core.dll
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Application\bin\Debug\net8.0\BloodTrack.Core.pdb
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Application\obj\Debug\net8.0\BloodTrack.Application.csproj.AssemblyReference.cache
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Application\obj\Debug\net8.0\BloodTra.4060683A.Up2Date

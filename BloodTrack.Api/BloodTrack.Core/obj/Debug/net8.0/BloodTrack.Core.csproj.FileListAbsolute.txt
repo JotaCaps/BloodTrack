@@ -1,0 +1,12 @@
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Core\bin\Debug\net8.0\BloodTrack.Core.deps.json
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Core\bin\Debug\net8.0\BloodTrack.Core.dll
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Core\bin\Debug\net8.0\BloodTrack.Core.pdb
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Core\obj\Debug\net8.0\BloodTrack.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Core\obj\Debug\net8.0\BloodTrack.Core.AssemblyInfoInputs.cache
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Core\obj\Debug\net8.0\BloodTrack.Core.AssemblyInfo.cs
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Core\obj\Debug\net8.0\BloodTrack.Core.csproj.CoreCompileInputs.cache
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Core\obj\Debug\net8.0\BloodTrack.Core.sourcelink.json
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Core\obj\Debug\net8.0\BloodTrack.Core.dll
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Core\obj\Debug\net8.0\refint\BloodTrack.Core.dll
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Core\obj\Debug\net8.0\BloodTrack.Core.pdb
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Core\obj\Debug\net8.0\ref\BloodTrack.Core.dll
