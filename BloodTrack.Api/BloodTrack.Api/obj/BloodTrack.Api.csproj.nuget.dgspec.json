@@ -131,6 +131,9 @@
             "projectReferences": {
               "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Core\\BloodTrack.Core.csproj": {
                 "projectPath": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Core\\BloodTrack.Core.csproj"
+              },
+              "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Infrastructure\\BloodTrack.Infrastructure.csproj": {
+                "projectPath": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Infrastructure\\BloodTrack.Infrastructure.csproj"
               }
             }
           }

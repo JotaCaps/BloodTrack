@@ -17,6 +17,29 @@
         }
       }
     },
+    "/api/v1/bloodstocks/{id}": {
+      "get": {
+        "tags": [
+          "BloodStocks"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/v1/donations": {
       "post": {
         "tags": [
@@ -247,17 +270,9 @@
       "RegisterDonationInputModel": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "donorId": {
             "type": "integer",
             "format": "int32"
-          },
-          "donationDate": {
-            "type": "string",
-            "format": "date-time"
           },
           "amountMl": {
             "type": "integer",
@@ -307,6 +322,11 @@
       "UpdateDonorInputModel": {
         "type": "object",
         "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
           "completeName": {
             "type": "string",
             "nullable": true

@@ -11,9 +11,9 @@
             Weigth = weigth;
             BloodTipe = bloodTipe;
             RhFactor = rhFactor;
-
         }
 
+        public int Id { get; private set; }
         public string CompleteName { get; private set; }
         public string Email { get; private set; }
         public DateTime BirthDate { get; private set; }

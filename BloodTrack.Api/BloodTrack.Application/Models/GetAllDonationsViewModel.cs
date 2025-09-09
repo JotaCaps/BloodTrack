@@ -4,20 +4,19 @@ namespace BloodTrack.Application.Models
 {
     public class GetAllDonationsViewModel
     {
-        public GetAllDonationsViewModel(int donorId, int amountMl)
+        public GetAllDonationsViewModel(int id, int donorId, DateTime donationDate, int amountMl)
         {
             DonorId = donorId;
-            AmountMl = amountMl;
+            DonationDate = donationDate;
         }
 
         public int Id { get; set; }
         public int DonorId { get; set; }
+        public DateTime DonationDate { get; set; }
         public int AmountMl { get; set; }
 
         public static GetAllDonationsViewModel FromEntity(Donation entity)
-            => new GetAllDonationsViewModel(entity.DonorId, entity.AmountMl)
-            {
-                Id = entity.Id
-            };
+            => new GetAllDonationsViewModel(entity.Id, entity.DonorId, entity.DonationDate, entity.AmountMl);
+        
     }
 }

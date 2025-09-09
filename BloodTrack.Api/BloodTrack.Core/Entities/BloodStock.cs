@@ -13,5 +13,10 @@
         public string BloodType { get; private set; }
         public string RhFactor { get; private set; }
         public int AmountMl { get; private set; }
+
+        public void UpdateStock(int amount)
+        {
+            AmountMl += amount;
+        }
     }
 }

@@ -12,6 +12,7 @@ namespace BloodTrack.Infrastructure.Persistence
         public DbSet<Donor> Donors { get; set; }
         public DbSet<Donation> Donations { get; set; }
         public DbSet<BloodStock> BloodStocks { get; set; }
+        public DbSet<Address> Addresses { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder builder)
@@ -20,12 +21,15 @@ namespace BloodTrack.Infrastructure.Persistence
                 Entity<Donor>(e =>
                 {
                     e.HasKey(e => e.Id);
-
+                    
                     e.HasMany(e => e.Donations) 
                         .WithOne(d => d.Donor)
                         .HasForeignKey(d => d.DonorId)
                         .OnDelete(DeleteBehavior.Restrict);
+
+                    e.OwnsOne(d => d.Address);
                 });
+
 
             builder.
                 Entity<Donation>(e =>

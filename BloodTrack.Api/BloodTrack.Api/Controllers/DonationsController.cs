@@ -24,6 +24,22 @@ namespace BloodTrack.Api.Controllers
             if (donor == null)
                 return NotFound("Doador não existe");
 
+
+            var bloodStock = await _context.BloodStocks.SingleOrDefaultAsync(b => b.BloodType == donor.BloodTipe && b.RhFactor == donor.RhFactor);
+
+            if (bloodStock == null)
+            {
+                var newBloodStock = new BloodStock(donor.BloodTipe, donor.RhFactor, model.AmountMl);
+                await _context.BloodStocks.AddAsync(newBloodStock);
+                
+            }
+            else 
+            {
+                bloodStock.UpdateStock(model.AmountMl);
+            }
+
+            await _context.SaveChangesAsync();
+
             var donation = model.ToEntity();
             donor.Donations.Add(donation);
 

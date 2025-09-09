@@ -17,16 +17,19 @@ namespace BloodTrack.Application.Models
 
         public int Id { get; set; }
         public string CompleteName { get; set; }
-        public string Email { get; set; }
+        public string Email { get; private set; }
         public DateTime BirthDate { get; set; }
         public string Gender { get; set; }
         public double Weigth { get; set; }
         public string BloodTipe { get; set; }
         public string RhFactor { get; set; }
 
+        public RegisterAddressInputModel Address { get; set; }
 
-        public Donor ToEntity()
-            => new(CompleteName, Email, BirthDate, Gender, Weigth, BloodTipe, RhFactor);
+        public Donor ToEntity() {
+            var address = Address.ToEntity();
+            
+            return new Donor(CompleteName, Email, BirthDate, Gender, Weigth, BloodTipe, RhFactor, address);     
+        }
     }
 }
-

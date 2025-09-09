@@ -2,7 +2,7 @@
 {
     public class Donor
     {
-        public Donor(string completeName, string email, DateTime birthDate, string gender, double weigth, string bloodTipe, string rhFactor)
+        public Donor(string completeName, string email, DateTime birthDate, string gender, double weigth, string bloodTipe, string rhFactor, Address address)
         {
             CompleteName = completeName;
             Email = email;
@@ -12,6 +12,7 @@
             BloodTipe = bloodTipe;
             RhFactor = rhFactor;
             Donations = [];
+            Address = address;
         }
 
         public int Id { get; private set; }
@@ -23,6 +24,7 @@
         public string BloodTipe { get; private set; }
         public string RhFactor { get; private set; }
         public List<Donation> Donations { get; private set; }
+        public Address Address { get; private set; }
 
         public void Update(string completeName, string email, DateTime birthDate, string gender, double weigth, string bloodTipe, string rhFactor)
         {

@@ -1090,7 +1090,8 @@
       },
       "BloodTrack.Application/1.0.0": {
         "dependencies": {
-          "BloodTrack.Core": "1.0.0"
+          "BloodTrack.Core": "1.0.0",
+          "BloodTrack.Infrastructure": "1.0.0"
         },
         "runtime": {
           "BloodTrack.Application.dll": {
