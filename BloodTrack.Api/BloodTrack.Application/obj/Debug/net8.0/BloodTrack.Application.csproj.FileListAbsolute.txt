@@ -14,5 +14,3 @@ C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Application\bin\Debug\net8.0\Blo
 C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Application\bin\Debug\net8.0\BloodTrack.Core.pdb
 C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Application\obj\Debug\net8.0\BloodTrack.Application.csproj.AssemblyReference.cache
 C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Application\obj\Debug\net8.0\BloodTra.4060683A.Up2Date
-C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Application\bin\Debug\net8.0\BloodTrack.Infrastructure.dll
-C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Application\bin\Debug\net8.0\BloodTrack.Infrastructure.pdb

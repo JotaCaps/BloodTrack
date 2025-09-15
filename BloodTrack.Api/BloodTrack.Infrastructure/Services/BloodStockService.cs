@@ -2,9 +2,9 @@
 using BloodTrack.Core.Entities;
 using BloodTrack.Infrastructure.Persistence;
 
-namespace BloodTrack.Core.Services
+namespace BloodTrack.Application.Services.BloodStockServices
 {
-    public class BloodStockService
+    public class BloodStockService : IBloodStockService
     {
         private readonly BloodTrackDbContext _context;
         public void RegisterBloodStock(RegisterDonationInputModel model, Donor donor, int id)

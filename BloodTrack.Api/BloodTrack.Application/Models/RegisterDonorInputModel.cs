@@ -13,6 +13,8 @@ namespace BloodTrack.Application.Models
             Weigth = weigth;
             BloodTipe = bloodTipe;
             RhFactor = rhFactor;
+            ZipCode = string.Empty;
+
         }
 
         public int Id { get; set; }
@@ -24,12 +26,7 @@ namespace BloodTrack.Application.Models
         public string BloodTipe { get; set; }
         public string RhFactor { get; set; }
 
-        public RegisterAddressInputModel Address { get; set; }
+        public string ZipCode { get; set; }
 
-        public Donor ToEntity() {
-            var address = Address.ToEntity();
-            
-            return new Donor(CompleteName, Email, BirthDate, Gender, Weigth, BloodTipe, RhFactor, address);     
-        }
     }
 }

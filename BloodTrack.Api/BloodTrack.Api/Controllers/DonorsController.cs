@@ -1,4 +1,6 @@
 ﻿using BloodTrack.Application.Models;
+using BloodTrack.Application.Services.ExternalServices;
+using BloodTrack.Core.Entities;
 using BloodTrack.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -10,18 +12,39 @@ namespace BloodTrack.Api.Controllers
     public class DonorsController : ControllerBase
     {
         private readonly BloodTrackDbContext _context;
-
-        public DonorsController(BloodTrackDbContext context)
+        private readonly ICepService _cepService;
+        public DonorsController(BloodTrackDbContext context, ICepService cepService)
         {
             _context = context;
+            _cepService = cepService;
         }
 
         [HttpPost]
         public async Task<IActionResult> Post(RegisterDonorInputModel model)
         {
-            var donor = model.ToEntity();
+            var address = await _cepService.GetAddressByCepAsync(model.ZipCode);
+
+            if (address == null)
+                return BadRequest("CEP inválido ou não encontrado.");
+
+            var donor = new Donor(model.CompleteName, 
+                model.Email, 
+                model.BirthDate, 
+                model.Gender, 
+                model.Weigth, 
+                model.BloodTipe, 
+                model.RhFactor, 
+                address);
+
+
 
             await _context.Donors.AddAsync(donor);
+
+            Console.WriteLine($"Logradouro: {address.Logradouro}");
+            Console.WriteLine($"City: {address.City}");
+            Console.WriteLine($"State: {address.State}");
+            Console.WriteLine($"ZipCode: {address.ZipCode}");
+
             await _context.SaveChangesAsync();
             
             return Created();

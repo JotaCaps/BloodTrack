@@ -9,6 +9,7 @@
       "BloodTrack.Api/1.0.0": {
         "dependencies": {
           "BloodTrack.Application": "1.0.0",
+          "BloodTrack.Core": "1.0.0",
           "BloodTrack.Infrastructure": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8",
@@ -1090,8 +1091,7 @@
       },
       "BloodTrack.Application/1.0.0": {
         "dependencies": {
-          "BloodTrack.Core": "1.0.0",
-          "BloodTrack.Infrastructure": "1.0.0"
+          "BloodTrack.Core": "1.0.0"
         },
         "runtime": {
           "BloodTrack.Application.dll": {
@@ -1110,6 +1110,7 @@
       },
       "BloodTrack.Infrastructure/1.0.0": {
         "dependencies": {
+          "BloodTrack.Application": "1.0.0",
           "BloodTrack.Core": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8"

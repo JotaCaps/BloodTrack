@@ -122,6 +122,41 @@ namespace BloodTrack.Infrastructure.Persistence.Migrations
 
             modelBuilder.Entity("BloodTrack.Core.Entities.Donor", b =>
                 {
+                    b.OwnsOne("BloodTrack.Core.ValueObjects.Address", "Address", b1 =>
+                        {
+                            b1.Property<int>("DonorId")
+                                .HasColumnType("int");
+
+                            b1.Property<string>("City")
+                                .IsRequired()
+                                .HasColumnType("nvarchar(max)");
+
+                            b1.Property<string>("Logradouro")
+                                .IsRequired()
+                                .HasColumnType("nvarchar(max)");
+
+                            b1.Property<string>("State")
+                                .IsRequired()
+                                .HasColumnType("nvarchar(max)");
+
+                            b1.Property<string>("ZipCode")
+                                .IsRequired()
+                                .HasColumnType("nvarchar(max)");
+
+                            b1.HasKey("DonorId");
+
+                            b1.ToTable("Donors");
+
+                            b1.WithOwner()
+                                .HasForeignKey("DonorId");
+                        });
+
+                    b.Navigation("Address")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("BloodTrack.Core.Entities.Donor", b =>
+                {
                     b.Navigation("Donations");
                 });
 #pragma warning restore 612, 618

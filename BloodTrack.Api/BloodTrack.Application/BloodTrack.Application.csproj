@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BloodTrack.Core\BloodTrack.Core.csproj" />
-    <ProjectReference Include="..\BloodTrack.Infrastructure\BloodTrack.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

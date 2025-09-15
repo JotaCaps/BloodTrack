@@ -315,6 +315,10 @@
           "rhFactor": {
             "type": "string",
             "nullable": true
+          },
+          "zipCode": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

@@ -12,7 +12,6 @@ namespace BloodTrack.Infrastructure.Persistence
         public DbSet<Donor> Donors { get; set; }
         public DbSet<Donation> Donations { get; set; }
         public DbSet<BloodStock> BloodStocks { get; set; }
-        public DbSet<Address> Addresses { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder builder)
@@ -27,7 +26,15 @@ namespace BloodTrack.Infrastructure.Persistence
                         .HasForeignKey(d => d.DonorId)
                         .OnDelete(DeleteBehavior.Restrict);
 
-                    e.OwnsOne(d => d.Address);
+                    e.OwnsOne(d => d.Address, a =>
+                        {
+                            a.Property(p => p.Logradouro).HasColumnName("Address_Logradouro").IsRequired(false);
+                            a.Property(p => p.City).HasColumnName("Address_City").IsRequired(false);
+                            a.Property(p => p.State).HasColumnName("Address_State").IsRequired(false);
+                            a.Property(p => p.ZipCode).HasColumnName("Address_ZipCode").IsRequired(false);
+                        }
+                      
+                    );
                 });
 
 

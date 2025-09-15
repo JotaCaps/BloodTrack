@@ -16,3 +16,5 @@ C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Infrastructure\obj\Debug\net8.0\
 C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Infrastructure\obj\Debug\net8.0\BloodTrack.Infrastructure.pdb
 C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Infrastructure\obj\Debug\net8.0\BloodTrack.Infrastructure.genruntimeconfig.cache
 C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Infrastructure\obj\Debug\net8.0\ref\BloodTrack.Infrastructure.dll
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Infrastructure\bin\Debug\net8.0\BloodTrack.Application.dll
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Infrastructure\bin\Debug\net8.0\BloodTrack.Application.pdb

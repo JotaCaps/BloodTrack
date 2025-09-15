@@ -1,4 +1,6 @@
-﻿namespace BloodTrack.Core.Entities
+﻿using BloodTrack.Core.ValueObjects;
+
+namespace BloodTrack.Core.Entities
 {
     public class Donor
     {
@@ -14,6 +16,8 @@
             Donations = [];
             Address = address;
         }
+
+        protected Donor() { }
 
         public int Id { get; private set; }
         public string CompleteName { get; private set; }
