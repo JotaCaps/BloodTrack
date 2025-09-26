@@ -20,11 +20,12 @@ namespace BloodTrack.Infrastructure.Persistence
                 Entity<Donor>(e =>
                 {
                     e.HasKey(e => e.Id);
-                    
-                    e.HasMany(e => e.Donations) 
+
+                    e.HasMany(e => e.Donations)
                         .WithOne(d => d.Donor)
                         .HasForeignKey(d => d.DonorId)
                         .OnDelete(DeleteBehavior.Restrict);
+
 
                     e.OwnsOne(d => d.Address, a =>
                         {
@@ -42,6 +43,12 @@ namespace BloodTrack.Infrastructure.Persistence
                 Entity<Donation>(e =>
                 {
                     e.HasKey(e => e.Id);
+
+                    e.Property(e => e.Id).ValueGeneratedOnAdd();
+
+                    //e.HasAnnotation("Relational:ConstructorParameters", new[] {
+                    //    "id", "donorId", "donationDate", "amountMl"
+                    // });
                 });
 
             builder.

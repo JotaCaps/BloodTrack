@@ -45,31 +45,21 @@
         "tags": [
           "Donations"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/RegisterDonationInputModel"
+                "$ref": "#/components/schemas/RegisterDonationCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/RegisterDonationInputModel"
+                "$ref": "#/components/schemas/RegisterDonationCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/RegisterDonationInputModel"
+                "$ref": "#/components/schemas/RegisterDonationCommand"
               }
             }
           }
@@ -123,17 +113,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/RegisterDonorInputModel"
+                "$ref": "#/components/schemas/RegisterDonorCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/RegisterDonorInputModel"
+                "$ref": "#/components/schemas/RegisterDonorCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/RegisterDonorInputModel"
+                "$ref": "#/components/schemas/RegisterDonorCommand"
               }
             }
           }
@@ -221,17 +211,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateDonorInputModel"
+                "$ref": "#/components/schemas/UpdateDonorCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateDonorInputModel"
+                "$ref": "#/components/schemas/UpdateDonorCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateDonorInputModel"
+                "$ref": "#/components/schemas/UpdateDonorCommand"
               }
             }
           }
@@ -267,7 +257,7 @@
   },
   "components": {
     "schemas": {
-      "RegisterDonationInputModel": {
+      "RegisterDonationCommand": {
         "type": "object",
         "properties": {
           "donorId": {
@@ -281,7 +271,7 @@
         },
         "additionalProperties": false
       },
-      "RegisterDonorInputModel": {
+      "RegisterDonorCommand": {
         "type": "object",
         "properties": {
           "id": {
@@ -323,13 +313,12 @@
         },
         "additionalProperties": false
       },
-      "UpdateDonorInputModel": {
+      "UpdateDonorCommand": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32",
-            "readOnly": true
+            "format": "int32"
           },
           "completeName": {
             "type": "string",

@@ -2,12 +2,16 @@ using BloodTrack.Application.Services.ExternalServices;
 using BloodTrack.Infrastructure.Persistence;
 using BloodTrack.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
+using BloodTrack.Application;
+using BloodTrack.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddHttpClient<ICepService, ViaCepService>();
+builder.Services.AddApplication();
+builder.Services.AddInfrastructure();
 
 
 var connectionString = builder.Configuration.GetConnectionString("BloodTrackCs");

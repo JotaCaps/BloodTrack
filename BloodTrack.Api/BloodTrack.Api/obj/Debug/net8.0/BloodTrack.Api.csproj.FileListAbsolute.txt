@@ -175,4 +175,6 @@ C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Api\bin\Debug\net8.0\zh-Hans\Mic
 C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Api\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Api\bin\Debug\net8.0\BloodTrack.Application.dll
 C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Api\bin\Debug\net8.0\BloodTrack.Application.pdb
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Api\bin\Debug\net8.0\MediatR.dll
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Api\bin\Debug\net8.0\MediatR.Contracts.dll
 C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

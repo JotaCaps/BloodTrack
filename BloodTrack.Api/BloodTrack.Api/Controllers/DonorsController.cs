@@ -1,9 +1,12 @@
-﻿using BloodTrack.Application.Models;
+﻿using BloodTrack.Application.Commands.DonorComands.DeleteDonor;
+using BloodTrack.Application.Commands.DonorComands.RegisterDonor;
+using BloodTrack.Application.Commands.DonorComands.UpdateDonor;
+using BloodTrack.Application.Queries.DonorQueries.GetAllDonors;
+using BloodTrack.Application.Queries.DonorQueries.GetDonationByDonorId;
+using BloodTrack.Application.Queries.DonorQueries.GetDonorById;
 using BloodTrack.Application.Services.ExternalServices;
-using BloodTrack.Core.Entities;
-using BloodTrack.Infrastructure.Persistence;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace BloodTrack.Api.Controllers
 {
@@ -11,41 +14,23 @@ namespace BloodTrack.Api.Controllers
     [Route("api/v1/donors")]
     public class DonorsController : ControllerBase
     {
-        private readonly BloodTrackDbContext _context;
+        private readonly IMediator _mediator;
         private readonly ICepService _cepService;
-        public DonorsController(BloodTrackDbContext context, ICepService cepService)
+        public DonorsController(ICepService cepService, IMediator mediator)
         {
-            _context = context;
             _cepService = cepService;
+            _mediator = mediator;
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(RegisterDonorInputModel model)
+        public async Task<IActionResult> Post(RegisterDonorCommand command)
         {
-            var address = await _cepService.GetAddressByCepAsync(model.ZipCode);
+            var address = await _cepService.GetAddressByCepAsync(command.ZipCode);
 
             if (address == null)
                 return BadRequest("CEP inválido ou não encontrado.");
 
-            var donor = new Donor(model.CompleteName, 
-                model.Email, 
-                model.BirthDate, 
-                model.Gender, 
-                model.Weigth, 
-                model.BloodTipe, 
-                model.RhFactor, 
-                address);
-
-
-
-            await _context.Donors.AddAsync(donor);
-
-            Console.WriteLine($"Logradouro: {address.Logradouro}");
-            Console.WriteLine($"City: {address.City}");
-            Console.WriteLine($"State: {address.State}");
-            Console.WriteLine($"ZipCode: {address.ZipCode}");
-
-            await _context.SaveChangesAsync();
+            var result = await _mediator.Send(command);            
             
             return Created();
         }
@@ -53,57 +38,61 @@ namespace BloodTrack.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var donations = _context.Donors.ToList();
-            var model = donations.Select(GetAllDonorsViewModel.FromEntity).ToList();
+            var query = new GetAllDonorsQuerie();
+
+            var result = await _mediator.Send(query);
             
-            return Ok(model);
+            return Ok(result);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetDonorById(int id)
         {
-            var donor = await _context.Donors.SingleOrDefaultAsync(x => x.Id == id);
-            var model = GetDonorByIdViewModel.FromEntity(donor);
+            var query = new GetDonorByIdQuerie(id);
 
-            return Ok(model);
+            var result = await _mediator.Send(query);
+
+            if (!result.IsSuccess)
+            {
+                return BadRequest(result.Message);
+            }
+
+            return Ok(result);
         }
 
         [HttpGet("{id}/donations")]
-        public async Task<IActionResult> GetDonationsByDonorId(int id)
+        public async Task<IActionResult> GetDonationsByDonorId([FromRoute]int id)
         {
-            var donor = await _context.Donors
-                .Include(x => x.Donations)
-                .SingleOrDefaultAsync(x => x.Id == id);
-            
-            var donations = donor.Donations
-                .Where(d => d.DonorId == id)
-                .Select(GetAllDonationsViewModel.FromEntity) 
-                .ToList();
-            
-            return Ok(donations);
+            var query = new GetDonationsByDonorIdQuerie(id);
+            var result = await _mediator.Send(query);
+
+            if (!result.IsSuccess)
+            {
+                return NotFound(result.Message);
+            }
+
+            return Ok(result);
         }
 
         [HttpPut("donors/{id}")]
-        public async Task<IActionResult> Put(UpdateDonorInputModel model, int id)      
+        public async Task<IActionResult> Put([FromBody]UpdateDonorCommand command, [FromRoute]int id)      
         {
-            var donor = await _context.Donors.SingleOrDefaultAsync(x => x.Id == id);
-            donor.Update(model.CompleteName, model.Email, model.BirthDate, model.Gender, model.Weigth, model.BloodTipe, model.RhFactor);
-
-            _context.Donors.Update(donor);
-            await _context.SaveChangesAsync();
+            command.Id = id;
             
-            return Ok(donor.Id);
+            var result = await _mediator.Send(command);
+
+            if (!result.IsSuccess)
+                BadRequest();
+            
+            return NoContent();
         }
 
         [HttpDelete("donors/{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var donor = await _context.Donors.SingleOrDefaultAsync(x => x.Id == id);
-
-            _context.Donors.Remove(donor);
-            await _context.SaveChangesAsync();
+            var result = await _mediator.Send(new DeleteDonorCommand(id));
             
-            return Ok();
+            return NoContent();
         }
     }
 }

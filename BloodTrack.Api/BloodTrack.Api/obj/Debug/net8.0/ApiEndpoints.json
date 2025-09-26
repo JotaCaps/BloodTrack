@@ -34,14 +34,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "model",
-        "Type": "BloodTrack.Application.Models.RegisterDonationInputModel",
+        "Name": "command",
+        "Type": "BloodTrack.Application.Commands.DonationsCommands.RegisterDonation.RegisterDonationCommand",
         "IsRequired": true
-      },
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -81,8 +76,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "model",
-        "Type": "BloodTrack.Application.Models.RegisterDonorInputModel",
+        "Name": "command",
+        "Type": "BloodTrack.Application.Commands.DonorComands.RegisterDonor.RegisterDonorCommand",
         "IsRequired": true
       }
     ],
@@ -139,8 +134,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "model",
-        "Type": "BloodTrack.Application.Models.UpdateDonorInputModel",
+        "Name": "command",
+        "Type": "BloodTrack.Application.Commands.DonorComands.UpdateDonor.UpdateDonorCommand",
         "IsRequired": true
       },
       {

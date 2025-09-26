@@ -13,8 +13,8 @@ namespace BloodTrack.Core.Entities
             Weigth = weigth;
             BloodTipe = bloodTipe;
             RhFactor = rhFactor;
-            Donations = [];
             Address = address;
+            Donations = new List<Donation>();
         }
 
         protected Donor() { }

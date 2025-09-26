@@ -1,8 +1,8 @@
-﻿using BloodTrack.Application.Models;
-using BloodTrack.Core.Entities;
-using BloodTrack.Infrastructure.Persistence;
+﻿using BloodTrack.Application.Commands.DonationsCommands.RegisterDonation;
+using BloodTrack.Application.Queries.DonationsQueries.GetAllDonations;
+using BloodTrack.Application.Queries.DonationsQueries.GetDonationById;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace BloodTrack.Api.Controllers
 {
@@ -10,41 +10,16 @@ namespace BloodTrack.Api.Controllers
     [Route("api/v1/donations")]
     public class DonationsController : ControllerBase
     {
-        private readonly BloodTrackDbContext _context;
-
-        public DonationsController(BloodTrackDbContext context)
+        private readonly IMediator _mediator;
+        public DonationsController(IMediator mediator)
         {
-            _context = context;
+            _mediator = mediator;
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(RegisterDonationInputModel model, int id)
+        public async Task<IActionResult> Post(RegisterDonationCommand command)
         {
-            var donor = await _context.Donors.SingleOrDefaultAsync(x => x.Id == id);
-            if (donor == null)
-                return NotFound("Doador não existe");
-
-
-            var bloodStock = await _context.BloodStocks.SingleOrDefaultAsync(b => b.BloodType == donor.BloodTipe && b.RhFactor == donor.RhFactor);
-
-            if (bloodStock == null)
-            {
-                var newBloodStock = new BloodStock(donor.BloodTipe, donor.RhFactor, model.AmountMl);
-                await _context.BloodStocks.AddAsync(newBloodStock);
-                
-            }
-            else 
-            {
-                bloodStock.UpdateStock(model.AmountMl);
-            }
-
-            await _context.SaveChangesAsync();
-
-            var donation = model.ToEntity();
-            donor.Donations.Add(donation);
-
-            await _context.Donations.AddAsync(donation);
-            await _context.SaveChangesAsync();
+            var result = await _mediator.Send(command);
             
             return Created();
         }
@@ -52,19 +27,17 @@ namespace BloodTrack.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var donations = await _context.Donations.ToListAsync();
-            var model = donations.Select(GetAllDonationsViewModel.FromEntity).ToList();
+            var result = await _mediator.Send(new GetAllDonationsQuerie());
 
-            return Ok(donations);
+            return Ok(result);
         }
 
         [HttpGet("donations/{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var donation = await _context.Donations.SingleOrDefaultAsync(x => x.Id == id);
-            var model = GetDonationByIdViewModel.FromEntity(donation);
+            var result = await _mediator.Send(new GetDonationByIdQuerie(id));
 
-            return Ok(model);
+            return Ok(result);
         }
 
     }

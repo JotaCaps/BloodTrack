@@ -128,20 +128,20 @@ namespace BloodTrack.Infrastructure.Persistence.Migrations
                                 .HasColumnType("int");
 
                             b1.Property<string>("City")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("Address_City");
 
                             b1.Property<string>("Logradouro")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("Address_Logradouro");
 
                             b1.Property<string>("State")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("Address_State");
 
                             b1.Property<string>("ZipCode")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("Address_ZipCode");
 
                             b1.HasKey("DonorId");
 
