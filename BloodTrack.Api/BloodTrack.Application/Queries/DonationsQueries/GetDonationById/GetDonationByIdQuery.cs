@@ -4,9 +4,9 @@ using MediatR;
 
 namespace BloodTrack.Application.Queries.DonationsQueries.GetDonationById
 {
-    public class GetDonationByIdQuerie : IRequest<ResultViewModel<GetDonationByIdViewModel>>
+    public class GetDonationByIdQuery : IRequest<ResultViewModel<GetDonationByIdViewModel>>
     {
-        public GetDonationByIdQuerie(int id)
+        public GetDonationByIdQuery(int id)
         {
             Id = id;
         }

@@ -3,24 +3,72 @@
   "WorkspaceRootPath": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{946E0883-A5E7-4455-8E88-94B10789CC35}|BloodTrack.Infrastructure\\BloodTrack.Infrastructure.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.infrastructure\\persistence\\bloodtrackdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{946E0883-A5E7-4455-8E88-94B10789CC35}|BloodTrack.Infrastructure\\BloodTrack.Infrastructure.csproj|solutionrelative:bloodtrack.infrastructure\\persistence\\bloodtrackdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94AF8D0A-5C7A-4888-A575-E86F97BF17AE}|BloodTrack.Api\\BloodTrack.Api.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.api\\controllers\\donationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94AF8D0A-5C7A-4888-A575-E86F97BF17AE}|BloodTrack.Api\\BloodTrack.Api.csproj|solutionrelative:bloodtrack.api\\controllers\\donationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF2FA33A-11BE-4920-ACA7-4460BE756A25}|BloodTrack.Core\\BloodTrack.Core.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.core\\entities\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF2FA33A-11BE-4920-ACA7-4460BE756A25}|BloodTrack.Core\\BloodTrack.Core.csproj|solutionrelative:bloodtrack.core\\entities\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94AF8D0A-5C7A-4888-A575-E86F97BF17AE}|BloodTrack.Api\\BloodTrack.Api.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.api\\controllers\\donorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94AF8D0A-5C7A-4888-A575-E86F97BF17AE}|BloodTrack.Api\\BloodTrack.Api.csproj|solutionrelative:bloodtrack.api\\controllers\\donorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94AF8D0A-5C7A-4888-A575-E86F97BF17AE}|BloodTrack.Api\\BloodTrack.Api.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.api\\controllers\\bloodstockscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94AF8D0A-5C7A-4888-A575-E86F97BF17AE}|BloodTrack.Api\\BloodTrack.Api.csproj|solutionrelative:bloodtrack.api\\controllers\\bloodstockscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.application\\queries\\bloodstocksqueries\\getbloodstockbyid\\getbloodstockbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|solutionrelative:bloodtrack.application\\queries\\bloodstocksqueries\\getbloodstockbyid\\getbloodstockbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.application\\queries\\bloodstocksqueries\\getallbloodstocks\\getallbloodstockshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|solutionrelative:bloodtrack.application\\queries\\bloodstocksqueries\\getallbloodstocks\\getallbloodstockshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.application\\queries\\donationsqueries\\getdonationbyid\\getdonationbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|solutionrelative:bloodtrack.application\\queries\\donationsqueries\\getdonationbyid\\getdonationbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.application\\queries\\donationsqueries\\getalldonations\\getalldonationshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|solutionrelative:bloodtrack.application\\queries\\donationsqueries\\getalldonations\\getalldonationshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.application\\queries\\donorqueries\\getdonationbydonorid\\getdonationsbydonoridhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|solutionrelative:bloodtrack.application\\queries\\donorqueries\\getdonationbydonorid\\getdonationsbydonoridhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.application\\queries\\donorqueries\\getdonationbydonorid\\getdonationsbydonoridquerie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|solutionrelative:bloodtrack.application\\queries\\donorqueries\\getdonationbydonorid\\getdonationsbydonoridquerie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.application\\queries\\donorqueries\\getdonorbyid\\getdonorbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|solutionrelative:bloodtrack.application\\queries\\donorqueries\\getdonorbyid\\getdonorbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.application\\queries\\donorqueries\\getalldonors\\getalldonorshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|solutionrelative:bloodtrack.application\\queries\\donorqueries\\getalldonors\\getalldonorshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2FA33A-11BE-4920-ACA7-4460BE756A25}|BloodTrack.Core\\BloodTrack.Core.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.core\\entities\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2FA33A-11BE-4920-ACA7-4460BE756A25}|BloodTrack.Core\\BloodTrack.Core.csproj|solutionrelative:bloodtrack.core\\entities\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{946E0883-A5E7-4455-8E88-94B10789CC35}|BloodTrack.Infrastructure\\BloodTrack.Infrastructure.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.infrastructure\\persistence\\bloodtrackdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{946E0883-A5E7-4455-8E88-94B10789CC35}|BloodTrack.Infrastructure\\BloodTrack.Infrastructure.csproj|solutionrelative:bloodtrack.infrastructure\\persistence\\bloodtrackdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.application\\models\\getalldonationsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|solutionrelative:bloodtrack.application\\models\\getalldonationsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.application\\queries\\donorqueries\\getdonationbydonorid\\getdonationsbydonoridquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|solutionrelative:bloodtrack.application\\queries\\donorqueries\\getdonationbydonorid\\getdonationsbydonoridquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2FA33A-11BE-4920-ACA7-4460BE756A25}|BloodTrack.Core\\BloodTrack.Core.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.core\\repositories\\idonationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2FA33A-11BE-4920-ACA7-4460BE756A25}|BloodTrack.Core\\BloodTrack.Core.csproj|solutionrelative:bloodtrack.core\\repositories\\idonationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AF2FA33A-11BE-4920-ACA7-4460BE756A25}|BloodTrack.Core\\BloodTrack.Core.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.core\\entities\\donor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF2FA33A-11BE-4920-ACA7-4460BE756A25}|BloodTrack.Core\\BloodTrack.Core.csproj|solutionrelative:bloodtrack.core\\entities\\donor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2FA33A-11BE-4920-ACA7-4460BE756A25}|BloodTrack.Core\\BloodTrack.Core.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.core\\repositories\\ibloodstockrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2FA33A-11BE-4920-ACA7-4460BE756A25}|BloodTrack.Core\\BloodTrack.Core.csproj|solutionrelative:bloodtrack.core\\repositories\\ibloodstockrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{946E0883-A5E7-4455-8E88-94B10789CC35}|BloodTrack.Infrastructure\\BloodTrack.Infrastructure.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.infrastructure\\persistence\\repositories\\donationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,24 +79,12 @@
       "RelativeMoniker": "D:0:0:{946E0883-A5E7-4455-8E88-94B10789CC35}|BloodTrack.Infrastructure\\BloodTrack.Infrastructure.csproj|solutionrelative:bloodtrack.infrastructure\\persistence\\repositories\\bloodstockrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF2FA33A-11BE-4920-ACA7-4460BE756A25}|BloodTrack.Core\\BloodTrack.Core.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.core\\repositories\\idonationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF2FA33A-11BE-4920-ACA7-4460BE756A25}|BloodTrack.Core\\BloodTrack.Core.csproj|solutionrelative:bloodtrack.core\\repositories\\idonationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.application\\commands\\donationscommands\\registerdonation\\registerdonationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|solutionrelative:bloodtrack.application\\commands\\donationscommands\\registerdonation\\registerdonationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF2FA33A-11BE-4920-ACA7-4460BE756A25}|BloodTrack.Core\\BloodTrack.Core.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.core\\repositories\\ibloodstockrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AF2FA33A-11BE-4920-ACA7-4460BE756A25}|BloodTrack.Core\\BloodTrack.Core.csproj|solutionrelative:bloodtrack.core\\repositories\\ibloodstockrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.application\\commands\\donationscommands\\registerdonation\\registerdonationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{685BE5B1-BD70-4AF5-8927-46A5664D0989}|BloodTrack.Application\\BloodTrack.Application.csproj|solutionrelative:bloodtrack.application\\commands\\donationscommands\\registerdonation\\registerdonationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94AF8D0A-5C7A-4888-A575-E86F97BF17AE}|BloodTrack.Api\\BloodTrack.Api.csproj|c:\\estudos\\bloodtrack\\bloodtrack.api\\bloodtrack.api\\controllers\\donationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94AF8D0A-5C7A-4888-A575-E86F97BF17AE}|BloodTrack.Api\\BloodTrack.Api.csproj|solutionrelative:bloodtrack.api\\controllers\\donationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,63 +94,193 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BloodStocksController.cs",
+              "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Api\\Controllers\\BloodStocksController.cs",
+              "RelativeDocumentMoniker": "BloodTrack.Api\\Controllers\\BloodStocksController.cs",
+              "ToolTip": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Api\\Controllers\\BloodStocksController.cs",
+              "RelativeToolTip": "BloodTrack.Api\\Controllers\\BloodStocksController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T20:59:23.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DonorsController.cs",
+              "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Api\\Controllers\\DonorsController.cs",
+              "RelativeDocumentMoniker": "BloodTrack.Api\\Controllers\\DonorsController.cs",
+              "ToolTip": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Api\\Controllers\\DonorsController.cs",
+              "RelativeToolTip": "BloodTrack.Api\\Controllers\\DonorsController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAmwGcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T20:42:11.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "GetDonationsByDonorIdQuerie.cs",
-              "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Application\\Queries\\DonorQueries\\GetDonationByDonorId\\GetDonationsByDonorIdQuerie.cs",
-              "RelativeDocumentMoniker": "BloodTrack.Application\\Queries\\DonorQueries\\GetDonationByDonorId\\GetDonationsByDonorIdQuerie.cs",
-              "ToolTip": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Application\\Queries\\DonorQueries\\GetDonationByDonorId\\GetDonationsByDonorIdQuerie.cs",
-              "RelativeToolTip": "BloodTrack.Application\\Queries\\DonorQueries\\GetDonationByDonorId\\GetDonationsByDonorIdQuerie.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABlAAAAAAAAAA==",
+              "Title": "GetBloodStockByIdHandler.cs",
+              "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Application\\Queries\\BloodStocksQueries\\GetBloodStockById\\GetBloodStockByIdHandler.cs",
+              "RelativeDocumentMoniker": "BloodTrack.Application\\Queries\\BloodStocksQueries\\GetBloodStockById\\GetBloodStockByIdHandler.cs",
+              "ToolTip": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Application\\Queries\\BloodStocksQueries\\GetBloodStockById\\GetBloodStockByIdHandler.cs",
+              "RelativeToolTip": "BloodTrack.Application\\Queries\\BloodStocksQueries\\GetBloodStockById\\GetBloodStockByIdHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T20:41:15.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetAllBloodStocksHandler.cs",
+              "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Application\\Queries\\BloodStocksQueries\\GetAllBloodStocks\\GetAllBloodStocksHandler.cs",
+              "RelativeDocumentMoniker": "BloodTrack.Application\\Queries\\BloodStocksQueries\\GetAllBloodStocks\\GetAllBloodStocksHandler.cs",
+              "ToolTip": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Application\\Queries\\BloodStocksQueries\\GetAllBloodStocks\\GetAllBloodStocksHandler.cs",
+              "RelativeToolTip": "BloodTrack.Application\\Queries\\BloodStocksQueries\\GetAllBloodStocks\\GetAllBloodStocksHandler.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAcwBEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T20:40:09.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GetDonationByIdHandler.cs",
+              "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Application\\Queries\\DonationsQueries\\GetDonationById\\GetDonationByIdHandler.cs",
+              "RelativeDocumentMoniker": "BloodTrack.Application\\Queries\\DonationsQueries\\GetDonationById\\GetDonationByIdHandler.cs",
+              "ToolTip": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Application\\Queries\\DonationsQueries\\GetDonationById\\GetDonationByIdHandler.cs",
+              "RelativeToolTip": "BloodTrack.Application\\Queries\\DonationsQueries\\GetDonationById\\GetDonationByIdHandler.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBMAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T20:38:52.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetAllDonationsHandler.cs",
+              "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Application\\Queries\\DonationsQueries\\GetAllDonations\\GetAllDonationsHandler.cs",
+              "RelativeDocumentMoniker": "BloodTrack.Application\\Queries\\DonationsQueries\\GetAllDonations\\GetAllDonationsHandler.cs",
+              "ToolTip": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Application\\Queries\\DonationsQueries\\GetAllDonations\\GetAllDonationsHandler.cs",
+              "RelativeToolTip": "BloodTrack.Application\\Queries\\DonationsQueries\\GetAllDonations\\GetAllDonationsHandler.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBMAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T20:38:01.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DonationsController.cs",
+              "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Api\\Controllers\\DonationsController.cs",
+              "RelativeDocumentMoniker": "BloodTrack.Api\\Controllers\\DonationsController.cs",
+              "ToolTip": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Api\\Controllers\\DonationsController.cs",
+              "RelativeToolTip": "BloodTrack.Api\\Controllers\\DonationsController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAcwC4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T21:14:56.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GetDonorByIdHandler.cs",
+              "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Application\\Queries\\DonorQueries\\GetDonorById\\GetDonorByIdHandler.cs",
+              "RelativeDocumentMoniker": "BloodTrack.Application\\Queries\\DonorQueries\\GetDonorById\\GetDonorByIdHandler.cs",
+              "ToolTip": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Application\\Queries\\DonorQueries\\GetDonorById\\GetDonorByIdHandler.cs",
+              "RelativeToolTip": "BloodTrack.Application\\Queries\\DonorQueries\\GetDonorById\\GetDonorByIdHandler.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBMAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T20:36:08.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GetAllDonorsHandler.cs",
+              "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Application\\Queries\\DonorQueries\\GetAllDonors\\GetAllDonorsHandler.cs",
+              "RelativeDocumentMoniker": "BloodTrack.Application\\Queries\\DonorQueries\\GetAllDonors\\GetAllDonorsHandler.cs",
+              "ToolTip": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Application\\Queries\\DonorQueries\\GetAllDonors\\GetAllDonorsHandler.cs",
+              "RelativeToolTip": "BloodTrack.Application\\Queries\\DonorQueries\\GetAllDonors\\GetAllDonorsHandler.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBgAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T20:34:59.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GetAllDonationsViewModel.cs",
+              "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Application\\Models\\GetAllDonationsViewModel.cs",
+              "RelativeDocumentMoniker": "BloodTrack.Application\\Models\\GetAllDonationsViewModel.cs",
+              "ToolTip": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Application\\Models\\GetAllDonationsViewModel.cs",
+              "RelativeToolTip": "BloodTrack.Application\\Models\\GetAllDonationsViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T20:28:21.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GetDonationsByDonorIdQuery.cs",
+              "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Application\\Queries\\DonorQueries\\GetDonationByDonorId\\GetDonationsByDonorIdQuery.cs",
+              "RelativeDocumentMoniker": "BloodTrack.Application\\Queries\\DonorQueries\\GetDonationByDonorId\\GetDonationsByDonorIdQuery.cs",
+              "ToolTip": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Application\\Queries\\DonorQueries\\GetDonationByDonorId\\GetDonationsByDonorIdQuery.cs",
+              "RelativeToolTip": "BloodTrack.Application\\Queries\\DonorQueries\\GetDonationByDonorId\\GetDonationsByDonorIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-25T21:43:17.271Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
               "Title": "Donor.cs",
               "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Core\\Entities\\Donor.cs",
               "RelativeDocumentMoniker": "BloodTrack.Core\\Entities\\Donor.cs",
               "ToolTip": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Core\\Entities\\Donor.cs",
               "RelativeToolTip": "BloodTrack.Core\\Entities\\Donor.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwB0AAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAkwC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-25T21:37:54.035Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "GetDonationsByDonorIdHandler.cs",
               "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Application\\Queries\\DonorQueries\\GetDonationByDonorId\\GetDonationsByDonorIdHandler.cs",
               "RelativeDocumentMoniker": "BloodTrack.Application\\Queries\\DonorQueries\\GetDonationByDonorId\\GetDonationsByDonorIdHandler.cs",
               "ToolTip": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Application\\Queries\\DonorQueries\\GetDonationByDonorId\\GetDonationsByDonorIdHandler.cs",
               "RelativeToolTip": "BloodTrack.Application\\Queries\\DonorQueries\\GetDonationByDonorId\\GetDonationsByDonorIdHandler.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAiwBUAAABtAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAiwBIAAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-25T21:33:34.278Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
               "Title": "BloodTrackDbContext.cs",
               "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Infrastructure\\Persistence\\BloodTrackDbContext.cs",
               "RelativeDocumentMoniker": "BloodTrack.Infrastructure\\Persistence\\BloodTrackDbContext.cs",
               "ToolTip": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Infrastructure\\Persistence\\BloodTrackDbContext.cs",
               "RelativeToolTip": "BloodTrack.Infrastructure\\Persistence\\BloodTrackDbContext.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAswC4AAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-25T21:11:29.289Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "IDonationRepository.cs",
               "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Core\\Repositories\\IDonationRepository.cs",
               "RelativeDocumentMoniker": "BloodTrack.Core\\Repositories\\IDonationRepository.cs",
@@ -127,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 18,
               "Title": "BloodStockRepository.cs",
               "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Infrastructure\\Persistence\\Repositories\\BloodStockRepository.cs",
               "RelativeDocumentMoniker": "BloodTrack.Infrastructure\\Persistence\\Repositories\\BloodStockRepository.cs",
@@ -135,12 +301,24 @@
               "RelativeToolTip": "BloodTrack.Infrastructure\\Persistence\\Repositories\\BloodStockRepository.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwBsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T20:15:00.707Z",
+              "WhenOpened": "2025-09-25T20:15:00.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Donation.cs",
+              "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Core\\Entities\\Donation.cs",
+              "RelativeDocumentMoniker": "BloodTrack.Core\\Entities\\Donation.cs",
+              "ToolTip": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Core\\Entities\\Donation.cs",
+              "RelativeToolTip": "BloodTrack.Core\\Entities\\Donation.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA1wAsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T21:35:00.748Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "IBloodStockRepository.cs",
               "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Core\\Repositories\\IBloodStockRepository.cs",
               "RelativeDocumentMoniker": "BloodTrack.Core\\Repositories\\IBloodStockRepository.cs",
@@ -153,20 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Donation.cs",
-              "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Core\\Entities\\Donation.cs",
-              "RelativeDocumentMoniker": "BloodTrack.Core\\Entities\\Donation.cs",
-              "ToolTip": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Core\\Entities\\Donation.cs",
-              "RelativeToolTip": "BloodTrack.Core\\Entities\\Donation.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAA1wBAAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T21:35:00.748Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 17,
               "Title": "DonationRepository.cs",
               "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Infrastructure\\Persistence\\Repositories\\DonationRepository.cs",
               "RelativeDocumentMoniker": "BloodTrack.Infrastructure\\Persistence\\Repositories\\DonationRepository.cs",
@@ -174,12 +339,11 @@
               "RelativeToolTip": "BloodTrack.Infrastructure\\Persistence\\Repositories\\DonationRepository.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwBMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T21:27:08.344Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-24T21:27:08.344Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 20,
               "Title": "RegisterDonationCommand.cs",
               "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Application\\Commands\\DonationsCommands\\RegisterDonation\\RegisterDonationCommand.cs",
               "RelativeDocumentMoniker": "BloodTrack.Application\\Commands\\DonationsCommands\\RegisterDonation\\RegisterDonationCommand.cs",
@@ -187,12 +351,11 @@
               "RelativeToolTip": "BloodTrack.Application\\Commands\\DonationsCommands\\RegisterDonation\\RegisterDonationCommand.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAqwAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T21:27:02.991Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-24T21:27:02.991Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 19,
               "Title": "RegisterDonationHandler.cs",
               "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Application\\Commands\\DonationsCommands\\RegisterDonation\\RegisterDonationHandler.cs",
               "RelativeDocumentMoniker": "BloodTrack.Application\\Commands\\DonationsCommands\\RegisterDonation\\RegisterDonationHandler.cs",
@@ -200,21 +363,7 @@
               "RelativeToolTip": "BloodTrack.Application\\Commands\\DonationsCommands\\RegisterDonation\\RegisterDonationHandler.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAqwCcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T21:27:01.959Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DonationsController.cs",
-              "DocumentMoniker": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Api\\Controllers\\DonationsController.cs",
-              "RelativeDocumentMoniker": "BloodTrack.Api\\Controllers\\DonationsController.cs",
-              "ToolTip": "C:\\Estudos\\BloodTrack\\BloodTrack.Api\\BloodTrack.Api\\Controllers\\DonationsController.cs",
-              "RelativeToolTip": "BloodTrack.Api\\Controllers\\DonationsController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBcAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T21:14:56.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-24T21:27:01.959Z"
             }
           ]
         }

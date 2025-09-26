@@ -8,6 +8,8 @@ namespace BloodTrack.Application.Models
         {
             DonorId = donorId;
             DonationDate = donationDate;
+            AmountMl = amountMl;
+            Id = id;
         }
 
         public int Id { get; set; }

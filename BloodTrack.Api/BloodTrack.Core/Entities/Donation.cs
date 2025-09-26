@@ -9,14 +9,6 @@
             AmountMl = amountMl;
         }
 
-        protected Donation(int id, int donorId, DateTime donationDate, int amountMl)
-        {
-            Id = id;
-            DonorId = donorId;
-            DonationDate = donationDate;
-            AmountMl = amountMl;
-        }
-
         protected Donation() { }
 
         public int Id { get; private set; }

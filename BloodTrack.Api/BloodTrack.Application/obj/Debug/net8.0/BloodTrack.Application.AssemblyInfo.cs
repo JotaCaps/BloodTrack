@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BloodTrack.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+344deb978d5d77cab28841f18dcc0953a4dfe1f8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c89f27518f983dfcbca14dc90d7b657b28c66508")]
 [assembly: System.Reflection.AssemblyProductAttribute("BloodTrack.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BloodTrack.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

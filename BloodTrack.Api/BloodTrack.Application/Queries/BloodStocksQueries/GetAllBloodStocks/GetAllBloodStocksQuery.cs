@@ -3,7 +3,7 @@ using MediatR;
 
 namespace BloodTrack.Application.Queries.BloodStocksQueries.GetAllBloodStocks
 {
-    public class GetAllBloodStocksQuerie : IRequest<ResultViewModel<List<GetBloodStockViewModel>>>
+    public class GetAllBloodStocksQuery : IRequest<ResultViewModel<List<GetBloodStockViewModel>>>
     {
         
     }

@@ -3,7 +3,7 @@ using MediatR;
 
 namespace BloodTrack.Application.Queries.DonorQueries.GetAllDonors
 {
-    public class GetAllDonorsQuerie : IRequest<ResultViewModel<List<GetAllDonorsViewModel>>>
+    public class GetAllDonorsQuery : IRequest<ResultViewModel<List<GetAllDonorsViewModel>>>
     {
         
     }

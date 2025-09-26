@@ -21,7 +21,7 @@ namespace BloodTrack.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var result = await _mediator.Send(new GetAllBloodStocksQuerie());
+            var result = await _mediator.Send(new GetAllBloodStocksQuery());
 
             return Ok(result);
         }
@@ -29,7 +29,12 @@ namespace BloodTrack.Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetBloodStockById(int id)
         {
-            var result = await _mediator.Send(new GetBloodStockByIdQuerie(id));
+            var result = await _mediator.Send(new GetBloodStockByIdQuery(id));
+
+            if (!result.IsSuccess)
+            {
+                return NotFound(result.Message);
+            }
 
             return Ok(result);
         }

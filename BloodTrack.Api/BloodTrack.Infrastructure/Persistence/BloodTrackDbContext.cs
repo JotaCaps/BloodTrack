@@ -46,9 +46,6 @@ namespace BloodTrack.Infrastructure.Persistence
 
                     e.Property(e => e.Id).ValueGeneratedOnAdd();
 
-                    //e.HasAnnotation("Relational:ConstructorParameters", new[] {
-                    //    "id", "donorId", "donationDate", "amountMl"
-                    // });
                 });
 
             builder.

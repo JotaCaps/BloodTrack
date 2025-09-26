@@ -3,9 +3,9 @@ using MediatR;
 
 namespace BloodTrack.Application.Queries.BloodStocksQueries.GetBloodStockById
 {
-    public class GetBloodStockByIdQuerie : IRequest<ResultViewModel<GetBloodStockViewModel>>
+    public class GetBloodStockByIdQuery : IRequest<ResultViewModel<GetBloodStockViewModel>>
     {
-        public GetBloodStockByIdQuerie(int id)
+        public GetBloodStockByIdQuery(int id)
         {
             Id = id;
         }

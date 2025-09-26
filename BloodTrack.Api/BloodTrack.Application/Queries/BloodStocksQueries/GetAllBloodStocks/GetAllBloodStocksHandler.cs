@@ -4,16 +4,22 @@ using MediatR;
 
 namespace BloodTrack.Application.Queries.BloodStocksQueries.GetAllBloodStocks
 {
-    public class GetAllBloodStocksHandler : IRequestHandler<GetAllBloodStocksQuerie, ResultViewModel<List<GetBloodStockViewModel>>>
+    public class GetAllBloodStocksHandler : IRequestHandler<GetAllBloodStocksQuery, ResultViewModel<List<GetBloodStockViewModel>>>
     {
         private readonly IBloodStockRepository _repository;
         public GetAllBloodStocksHandler(IBloodStockRepository repository)
         {
             _repository = repository;
         }
-        public async Task<ResultViewModel<List<GetBloodStockViewModel>>> Handle(GetAllBloodStocksQuerie request, CancellationToken cancellationToken)
+        public async Task<ResultViewModel<List<GetBloodStockViewModel>>> Handle(GetAllBloodStocksQuery request, CancellationToken cancellationToken)
         {
             var bloodStocks = await _repository.GetAll();
+
+            if (bloodStocks is null)
+            {
+                return ResultViewModel<List<GetBloodStockViewModel>>.Error("Não existem estoques de sangue");
+            }
+
             var model =  bloodStocks.Select(GetBloodStockViewModel.FromEntity).ToList();
 
             return ResultViewModel<List<GetBloodStockViewModel>>.Success(model);
