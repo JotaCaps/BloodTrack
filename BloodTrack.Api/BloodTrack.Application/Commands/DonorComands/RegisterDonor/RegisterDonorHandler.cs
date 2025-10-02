@@ -11,10 +11,12 @@ namespace BloodTrack.Application.Commands.DonorComands.RegisterDonor
         
         private readonly IDonorRepository _repository;
         private readonly ICepService _cepService;
-        public RegisterDonorHandler(IDonorRepository repository, ICepService cepService)
+        private readonly IUnitOfWork _unitOfWork;
+        public RegisterDonorHandler(IDonorRepository repository, ICepService cepService, IUnitOfWork unitOfWork)
         {
             _repository = repository;
             _cepService = cepService;
+            _unitOfWork = unitOfWork;
         }
         public async Task<ResultViewModel<int>> Handle(RegisterDonorCommand request, CancellationToken cancellationToken)
         {
@@ -32,7 +34,9 @@ namespace BloodTrack.Application.Commands.DonorComands.RegisterDonor
                 request.RhFactor,
                 address);
 
-            await _repository.Add(donor, address);
+            await _repository.Add(donor);
+
+            await _unitOfWork.SaveChangesAsync();
 
             return ResultViewModel<int>.Success(donor.Id);
         }

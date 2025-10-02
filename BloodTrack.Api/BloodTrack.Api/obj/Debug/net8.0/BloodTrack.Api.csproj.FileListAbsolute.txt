@@ -177,4 +177,8 @@ C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Api\bin\Debug\net8.0\BloodTrack.
 C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Api\bin\Debug\net8.0\BloodTrack.Application.pdb
 C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Api\bin\Debug\net8.0\MediatR.dll
 C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Api\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Api\bin\Debug\net8.0\FluentValidation.dll
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Api\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Api\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Api\obj\Debug\net8.0\swae.build.ex.cache
 C:\Estudos\BloodTrack\BloodTrack.Api\BloodTrack.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BloodTrack.Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(BloodTrackDbContext))]
-    [Migration("20250911222050_SegundaMigation")]
-    partial class SegundaMigation
+    [Migration("20251001211308_QuartaMigration")]
+    partial class QuartaMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -131,20 +131,20 @@ namespace BloodTrack.Infrastructure.Persistence.Migrations
                                 .HasColumnType("int");
 
                             b1.Property<string>("City")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("Address_City");
 
                             b1.Property<string>("Logradouro")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("Address_Logradouro");
 
                             b1.Property<string>("State")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("Address_State");
 
                             b1.Property<string>("ZipCode")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("Address_ZipCode");
 
                             b1.HasKey("DonorId");
 

@@ -1,6 +1,5 @@
 ﻿using BloodTrack.Core.Entities;
 using BloodTrack.Core.Repositories;
-using BloodTrack.Core.ValueObjects;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -13,18 +12,15 @@ namespace BloodTrack.Infrastructure.Persistence.Repositories
         {
             _context = context;
         }
-        public async Task<int> Add(Donor donor, Address address)
+        public Task Add(Donor donor)
         {
-            await _context.Donors.AddAsync(donor);
-            await _context.SaveChangesAsync();
+            _context.Donors.AddAsync(donor);
 
-            return donor.Id;
+            return Task.CompletedTask;
         }
 
-        public async Task Delete(int id)
-        {
-            var donor = await _context.Donors.SingleOrDefaultAsync(x => x.Id == id);
-            
+        public async Task Delete(Donor donor)
+        {   
             _context.Donors.Remove(donor);
             await _context.SaveChangesAsync();
         }
@@ -62,6 +58,11 @@ namespace BloodTrack.Infrastructure.Persistence.Repositories
         {
             return await _context.Donors.SingleOrDefaultAsync(x => x.Id == id);
 
+        }
+
+        public async  Task<Donor> GetByEmail(string email)
+        {
+            return await _context.Donors.SingleOrDefaultAsync(x => x.Email == email);
         }
     }
 }

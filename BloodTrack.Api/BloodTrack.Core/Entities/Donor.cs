@@ -1,4 +1,5 @@
 ﻿using BloodTrack.Core.ValueObjects;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BloodTrack.Core.Entities
 {
@@ -19,6 +20,7 @@ namespace BloodTrack.Core.Entities
 
         protected Donor() { }
 
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; private set; }
         public string CompleteName { get; private set; }
         public string Email { get; private set; }

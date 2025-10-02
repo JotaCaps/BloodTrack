@@ -8,6 +8,6 @@ namespace BloodTrack.Core.Repositories
         Task<List<BloodStock>> GetAll();
         Task<BloodStock> GetById(int id);
         Task Update(BloodStock bloodStock);
-        Task<BloodStock> Exists(Donor donor);
+        Task<BloodStock> FindBloodStock(Donor donor);
     }
 }

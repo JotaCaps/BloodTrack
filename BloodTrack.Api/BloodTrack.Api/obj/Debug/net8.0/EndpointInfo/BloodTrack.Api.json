@@ -81,7 +81,7 @@
         }
       }
     },
-    "/api/v1/donations/donations/{id}": {
+    "/api/v1/donations/{id}": {
       "get": {
         "tags": [
           "Donations"
@@ -133,7 +133,9 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/donations": {
       "get": {
         "tags": [
           "Donors"
@@ -166,32 +168,7 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/api/v1/donors/{id}/donations": {
-      "get": {
-        "tags": [
-          "Donors"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/v1/donors/donors/{id}": {
+      },
       "put": {
         "tags": [
           "Donors"
@@ -233,6 +210,29 @@
         }
       },
       "delete": {
+        "tags": [
+          "Donors"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/donors/{id}/donations": {
+      "get": {
         "tags": [
           "Donors"
         ],

@@ -1,4 +1,6 @@
-﻿namespace BloodTrack.Core.Entities
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace BloodTrack.Core.Entities
 {
     public class Donation
     {
@@ -11,6 +13,7 @@
 
         protected Donation() { }
 
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; private set; }
         public int DonorId { get; private set; }
         public DateTime DonationDate { get; private set; }

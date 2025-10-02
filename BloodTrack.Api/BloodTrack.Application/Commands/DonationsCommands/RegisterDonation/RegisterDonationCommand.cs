@@ -13,8 +13,5 @@ namespace BloodTrack.Application.Commands.DonationsCommands.RegisterDonation
         }
         public int DonorId { get; set; }
         public int AmountMl { get; set; }
-
-        public Donation ToEntity()
-            => new(DonorId, AmountMl);
     }
 }

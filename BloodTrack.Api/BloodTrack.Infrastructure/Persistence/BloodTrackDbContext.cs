@@ -16,7 +16,12 @@ namespace BloodTrack.Infrastructure.Persistence
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            builder.
+
+
+            builder.ApplyConfigurationsFromAssembly(typeof(BloodTrackDbContext).Assembly);
+
+
+            /* builder.
                 Entity<Donor>(e =>
                 {
                     e.HasKey(e => e.Id);
@@ -54,7 +59,7 @@ namespace BloodTrack.Infrastructure.Persistence
                     e.HasKey(e => e.Id);
                 }); 
             
-            
+            */
             
             base.OnModelCreating(builder);
         }

@@ -1,9 +1,10 @@
+using BloodTrack.Application;
 using BloodTrack.Application.Services.ExternalServices;
+using BloodTrack.Infrastructure;
 using BloodTrack.Infrastructure.Persistence;
 using BloodTrack.Infrastructure.Services;
+using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
-using BloodTrack.Application;
-using BloodTrack.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +25,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+app.UseMiddleware<BloodTrack.Api.Middlewares.ExceptionMiddleware>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

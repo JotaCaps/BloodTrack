@@ -65,7 +65,7 @@ namespace BloodTrack.Api.Controllers
             return Ok(result);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}/donations")]
         public async Task<IActionResult> GetDonationsByDonorId([FromRoute]int id)
         {
             var query = new GetDonationsByDonorIdQuery(id);

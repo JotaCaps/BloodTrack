@@ -20,7 +20,7 @@ namespace BloodTrack.Infrastructure.Persistence.Repositories
             return bloodStock.Id;
         }
 
-        public async Task<BloodStock> Exists(Donor donor)
+        public async Task<BloodStock> FindBloodStock(Donor donor)
         {
             return await _context
                 .BloodStocks

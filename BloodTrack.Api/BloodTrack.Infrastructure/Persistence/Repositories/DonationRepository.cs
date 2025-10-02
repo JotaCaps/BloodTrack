@@ -12,12 +12,11 @@ namespace BloodTrack.Infrastructure.Persistence.Repositories
         {
             _context = context;
         }
-        public async Task<int> Add(Donation donation)
+        public Task Add(Donation donation)
         {
-            await _context.Donations.AddAsync(donation);
-            await _context.SaveChangesAsync();
+            _context.Donations.AddAsync(donation);
 
-            return donation.Id;
+            return Task.CompletedTask;
         }
 
         public async Task<List<Donation>> GetAll()
@@ -47,6 +46,14 @@ namespace BloodTrack.Infrastructure.Persistence.Repositories
                 .Include(x => x.Donations)
                 .SingleOrDefaultAsync(x => x.Id == id);
             return donor;
+        }
+
+        public async Task<DateTime?> GetLastDonationDate(int donorId)
+        {
+            return (DateTime)await _context.Donations
+                .Where(d => d.DonorId == donorId)
+                .MaxAsync(d => d.DonationDate);
+
         }
     }
 }

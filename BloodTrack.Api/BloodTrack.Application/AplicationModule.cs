@@ -1,4 +1,7 @@
 ﻿using BloodTrack.Application.Commands.DonorComands.RegisterDonor;
+using BloodTrack.Application.Validators;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace BloodTrack.Application
@@ -8,7 +11,8 @@ namespace BloodTrack.Application
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
             services.
-                AddHandlers();
+                AddHandlers()
+                .AddValidators();
 
             return services;
         }
@@ -17,6 +21,14 @@ namespace BloodTrack.Application
         {
             services.AddMediatR(config => 
             config.RegisterServicesFromAssemblyContaining<RegisterDonorCommand>());
+
+            return services;
+        }
+
+        private static IServiceCollection AddValidators(this IServiceCollection services)
+        {
+            services.AddFluentValidationAutoValidation()
+                .AddValidatorsFromAssemblyContaining<RegisterDonorCommand>();
 
             return services;
         }

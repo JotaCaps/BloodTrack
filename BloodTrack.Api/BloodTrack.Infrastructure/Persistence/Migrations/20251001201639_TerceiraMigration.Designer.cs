@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BloodTrack.Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(BloodTrackDbContext))]
-    [Migration("20250904195701_PrimeiraMigation")]
-    partial class PrimeiraMigation
+    [Migration("20251001201639_TerceiraMigration")]
+    partial class TerceiraMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -121,6 +121,41 @@ namespace BloodTrack.Infrastructure.Persistence.Migrations
                         .IsRequired();
 
                     b.Navigation("Donor");
+                });
+
+            modelBuilder.Entity("BloodTrack.Core.Entities.Donor", b =>
+                {
+                    b.OwnsOne("BloodTrack.Core.ValueObjects.Address", "Address", b1 =>
+                        {
+                            b1.Property<int>("DonorId")
+                                .HasColumnType("int");
+
+                            b1.Property<string>("City")
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("Address_City");
+
+                            b1.Property<string>("Logradouro")
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("Address_Logradouro");
+
+                            b1.Property<string>("State")
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("Address_State");
+
+                            b1.Property<string>("ZipCode")
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("Address_ZipCode");
+
+                            b1.HasKey("DonorId");
+
+                            b1.ToTable("Donors");
+
+                            b1.WithOwner()
+                                .HasForeignKey("DonorId");
+                        });
+
+                    b.Navigation("Address")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("BloodTrack.Core.Entities.Donor", b =>

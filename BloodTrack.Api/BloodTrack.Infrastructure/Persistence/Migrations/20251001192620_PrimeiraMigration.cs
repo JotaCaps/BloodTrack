@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace BloodTrack.Infrastructure.Persistence.Migrations
 {
     /// <inheritdoc />
-    public partial class PrimeiraMigation : Migration
+    public partial class PrimeiraMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -38,7 +38,11 @@ namespace BloodTrack.Infrastructure.Persistence.Migrations
                     Gender = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Weigth = table.Column<double>(type: "float", nullable: false),
                     BloodTipe = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    RhFactor = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    RhFactor = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Address_Logradouro = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Address_City = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Address_State = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Address_ZipCode = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

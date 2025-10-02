@@ -54,7 +54,7 @@
   {
     "ContainingType": "BloodTrack.Api.Controllers.DonationsController",
     "Method": "GetById",
-    "RelativePath": "api/v1/donations/donations/{id}",
+    "RelativePath": "api/v1/donations/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -85,19 +85,46 @@
   },
   {
     "ContainingType": "BloodTrack.Api.Controllers.DonorsController",
-    "Method": "GetAll",
-    "RelativePath": "api/v1/donors",
+    "Method": "GetDonorById",
+    "RelativePath": "api/v1/donors/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "BloodTrack.Api.Controllers.DonorsController",
-    "Method": "GetDonorById",
+    "Method": "Put",
     "RelativePath": "api/v1/donors/{id}",
-    "HttpMethod": "GET",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "BloodTrack.Application.Commands.DonorComands.UpdateDonor.UpdateDonorCommand",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BloodTrack.Api.Controllers.DonorsController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/donors/{id}",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -127,39 +154,12 @@
   },
   {
     "ContainingType": "BloodTrack.Api.Controllers.DonorsController",
-    "Method": "Put",
-    "RelativePath": "api/v1/donors/donors/{id}",
-    "HttpMethod": "PUT",
+    "Method": "GetAll",
+    "RelativePath": "donations",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "command",
-        "Type": "BloodTrack.Application.Commands.DonorComands.UpdateDonor.UpdateDonorCommand",
-        "IsRequired": true
-      },
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BloodTrack.Api.Controllers.DonorsController",
-    "Method": "Delete",
-    "RelativePath": "api/v1/donors/donors/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

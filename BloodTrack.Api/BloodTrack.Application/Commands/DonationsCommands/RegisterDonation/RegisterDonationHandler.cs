@@ -10,11 +10,13 @@ namespace BloodTrack.Application.Commands.DonationsCommands.RegisterDonation
         private readonly IDonationRepository _donationRepository;
         private readonly IDonorRepository _donorRepository;
         private readonly IBloodStockRepository _bloodStockRepository;
-        public RegisterDonationHandler(IDonationRepository donationRepository, IDonorRepository donorRepository, IBloodStockRepository bloodStockRepository)
+        private readonly IUnitOfWork _unitOfWork;
+        public RegisterDonationHandler(IDonationRepository donationRepository, IDonorRepository donorRepository, IBloodStockRepository bloodStockRepository, IUnitOfWork unitOfWork)
         {
             _donationRepository = donationRepository;
             _donorRepository = donorRepository;
             _bloodStockRepository = bloodStockRepository;
+            _unitOfWork = unitOfWork;
         }
         public async Task<ResultViewModel<int>> Handle(RegisterDonationCommand request, CancellationToken cancellationToken)
         {
@@ -22,7 +24,7 @@ namespace BloodTrack.Application.Commands.DonationsCommands.RegisterDonation
              if (donor == null)
                 return ResultViewModel<int>.Error("Doador não existe");
 
-            var bloodStock = await _bloodStockRepository.Exists(donor);
+            var bloodStock = await _bloodStockRepository.FindBloodStock(donor);
 
             if (bloodStock == null)
             {
@@ -35,11 +37,11 @@ namespace BloodTrack.Application.Commands.DonationsCommands.RegisterDonation
                 bloodStock.UpdateStock(request.AmountMl);
             }
 
-            var model = request.ToEntity();
+            var model = new Donation(donor.Id ,request.AmountMl);
 
-            // donor.Donations.Add(model);
+            await _donationRepository.Add(model);
 
-            var donation = await _donationRepository.Add(model);
+            await _unitOfWork.SaveChangesAsync();
 
             return ResultViewModel<int>.Success(model.Id);
         }

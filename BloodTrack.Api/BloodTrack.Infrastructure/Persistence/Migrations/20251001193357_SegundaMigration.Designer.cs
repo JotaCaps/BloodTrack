@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BloodTrack.Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(BloodTrackDbContext))]
-    [Migration("20250925211816_QuartaMigration")]
-    partial class QuartaMigration
+    [Migration("20251001193357_SegundaMigration")]
+    partial class SegundaMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
