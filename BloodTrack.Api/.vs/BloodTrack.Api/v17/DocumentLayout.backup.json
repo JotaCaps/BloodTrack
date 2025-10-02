@@ -94,12 +94,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -171,8 +167,7 @@
               "RelativeToolTip": "BloodTrack.Api\\Controllers\\DonationsController.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAUwC4AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T21:14:56.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-24T21:14:56.22Z"
             },
             {
               "$type": "Document",
@@ -353,6 +348,10 @@
               "ViewState": "AgIAABkAAAAAAAAAAAAqwCcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-24T21:27:01.959Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             }
           ]
         }
